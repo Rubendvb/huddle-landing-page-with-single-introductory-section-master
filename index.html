@@ -19,82 +19,50 @@
     </title>
 
     <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      src="https://kit.fontawesome.com/09d611313b.js"
+      crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <img src="./src/assets/images/logo.svg" alt="logo" />
+    <header class="header">
+      <img class="header__img" src="./src/assets/images/logo.svg" alt="logo" />
     </header>
 
-    <main>
-      <img src="./src/assets/images/illustration-mockups.svg" alt="" />
+    <main class="main">
+      <img
+        class="main__img"
+        src="./src/assets/images/illustration-mockups.svg"
+        alt=""
+      />
 
-      <div>
-        <h1>Build The Community Your Fans Will Love</h1>
+      <div class="main__div">
+        <h1 class="main__h1">Build The Community Your Fans Will Love</h1>
 
-        <p>
+        <p class="main__p">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
 
-        <button>Register</button>
+        <button class="main__button">Register</button>
       </div>
     </main>
 
-    <footer>
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
+    <footer class="footer">
+      <div>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
 
       <div>
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by <a href="#">Rubén</a>.
         </p>
       </div>
     </footer>
-
-    <!-- <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
-
-    <div x-data="{count: 0}">
-      <button x-on:click="count++">Incrementar</button>
-      <span x-text="count"></span>
-      <button x-on:click="count--">Decrementar</button>
-    </div>
-
-    <input type="text" @keyup.shift.enter="alert('Submitted!')" />
-
-    <div x-data="{ open: false }">
-      <button @click="open = ! open">Toggle</button>
-
-      <div x-show="open" @click.outside="open = false">Contents...</div>
-    </div>
-
-    <div
-      x-data="{
-        search: '',
- 
-        items: ['foo', 'bar', 'baz'],
- 
-        get filteredItems() {
-            return this.items.filter(
-                i => i.startsWith(this.search)
-            )
-        }
-    }"
-    >
-      <input x-model="search" placeholder="Search..." />
-
-      <ul>
-        <template x-for="item in filteredItems" :key="item">
-          <li x-text="item"></li>
-        </template>
-      </ul>
-    </div> -->
   </body>
 </html>
